@@ -1,5 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import ContactForm from "../components/ContactForm.astro";
 ---
 
 <Layout 
@@ -15,26 +16,25 @@ import Layout from "../layouts/Layout.astro";
 
     <div class="relative max-w-3xl text-center space-y-6 fade-up">
       <h1 class="text-5xl md:text-6xl font-bold tracking-tight">
-        Free your mind
+        The antidote to the algorithm.
       </h1>
       <p class="text-lg md:text-xl text-zinc-200">
-        A clean one-page site built with Astro and deployed on Netlify.
+        A private society for those choosing depth over distraction. Reclaim your attention through in-person community and analog experiences.
       </p>
       <a
         href="#features"
         class="inline-block rounded-lg bg-white text-black px-6 py-3 font-medium hover:bg-zinc-200 transition"
       >
-        Learn more
+        Join the Movement
       </a>
     </div>
   </section>
 
   <section id="about" class="px-6 py-24 bg-zinc-900 text-zinc-100 scroll-mt-16">
     <div class="max-w-3xl mx-auto space-y-6">
-        <h2 class="text-3xl font-semibold">Why this exists</h2>
+        <h2 class="text-3xl font-semibold">Life is happening elsewhere.</h2>
         <p class="text-zinc-400">
-          This section explains the purpose of the site in a clear,
-          human way: no fluff, no jargon.
+          We spend an average of seven hours a day behind glass. The Society exists to reclaim that time. We are a decentralized collective of thinkers, makers, and explorers who believe the most important things in life happen in high-definition, face-to-face. No feeds, no notifications—just presence.
         </p>
     </div>
   </section>
@@ -47,9 +47,9 @@ import Layout from "../layouts/Layout.astro";
 
       <div class="grid gap-8 md:grid-cols-3">
         {[
-          { title: "Fast & lightweight", desc: "Built with Astro 6 for maximum speed." },
-          { title: "Clean structure", desc: "Easy to read and modify code." },
-          { title: "Easy to deploy", desc: "Ready for Netlify or Vercel." },
+          { title: "Phone-Free Gatherings", desc: "Weekly dinners, hikes, and workshops where all digital devices are checked at the door." },
+          { title: "The Analog Library", desc: "Access to our physical archive of curated prints, vinyl, and literature—exclusive to members." },
+          { title: "Local Chapters", desc: "Find your “Cell.” Small, local groups dedicated to shared hobbies like woodworking, philosophy, or gardening." },
         ].map(feature => (
           <div class="rounded-xl bg-zinc-900 p-6 border border-white/5">
             <h3 class="font-medium mb-2 text-white">{feature.title}</h3>
@@ -62,16 +62,12 @@ import Layout from "../layouts/Layout.astro";
     </div>
   </section>
 
-  <section id="cta" class="px-6 py-32 bg-zinc-900 text-center text-zinc-100 scroll-mt-16">
+<section id="cta" class="px-6 py-32 bg-zinc-900 text-center text-zinc-100 scroll-mt-16">
     <div class="max-w-2xl mx-auto space-y-6">
-      <h2 class="text-4xl font-semibold">Ready to start?</h2>
-      <p class="text-zinc-400">Join our society and start your journey today.</p>
-      <a
-        href="mailto:hello@example.com"
-        class="inline-block rounded-lg bg-white text-black px-8 py-4 font-medium hover:bg-zinc-200 transition"
-      >
-        Get in touch
-      </a>
-    </div>
-  </section>
+      <h2 class="text-4xl font-semibold mb-8">Ready to disconnect?</h2>
+            <p class="text-lg md:text-xl text-zinc-200">
+        Membership is currently by invitation and application only. Tell us why you’re ready to trade your screen time for real time.
+      </p>
+      <ContactForm /> </div>
+</section>
 </Layout>
