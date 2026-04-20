@@ -1,0 +1,57 @@
+---
+import "../styles/global.css";
+import Navbar from "../components/Navbar.astro";
+import { ClientRouter } from 'astro:transitions';
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const { 
+  title = "The Society", 
+  description = "Default description for the society site." 
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <meta name="generator" content={Astro.generator} />
+        
+        <title>{title}</title>
+        <meta name="description" content={description} />
+        
+        <meta property="og:title" content={title} />
+        <meta property="og:description" content={description} />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="/social.jpg" />
+
+        <ClientRouter />
+    </head>
+    <body class="bg-zinc-950 text-zinc-100 antialiased flex flex-col min-h-screen">
+        <Navbar />
+        <main class="flex-grow">
+            <slot />
+        </main>
+        <footer class="px-6 py-12 text-center text-sm text-zinc-500">
+            &copy; {new Date().getFullYear()} The Society
+        </footer>
+    </body>
+</html>
+
+<style>
+    html {
+        margin: 0;
+        width: 100%;
+        min-height: 100%;
+    }
+    body {
+        margin: 0;
+        width: 100%;
+        /* min-height is handled by Tailwind class 'min-h-screen' above */
+    }
+</style>

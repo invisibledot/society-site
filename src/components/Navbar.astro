@@ -1,0 +1,88 @@
+---
+const links = [
+  { href: "/#hero", label: "Home" },
+  { href: "/#about", label: "About" },
+  { href: "/#features", label: "Features" },
+  { href: "/#cta", label: "Contact" },
+];
+---
+
+<nav class="fixed top-0 left-0 w-full z-50 backdrop-blur bg-black/40 border-b border-white/10">
+  <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+    <a href="/#hero" class="font-semibold tracking-tight">
+      The Society
+    </a>
+
+    <ul class="hidden md:flex items-center gap-8 text-sm text-zinc-200">
+      {links.map(link => (
+        <li>
+          <a href={link.href} class="relative hover:text-white after:absolute after:left-0 after:-bottom-1 after:h-px after:w-0 after:bg-white hover:after:w-full after:transition-all">
+            {link.label}
+          </a>
+        </li>
+      ))}
+    </ul>
+
+    <button
+      id="menu-button"
+      class="md:hidden flex flex-col gap-1.5"
+      aria-label="Toggle menu"
+    >
+      <span class="w-6 h-px bg-white"></span>
+      <span class="w-6 h-px bg-white"></span>
+      <span class="w-6 h-px bg-white"></span>
+    </button>
+  </div>
+
+  <div
+    id="mobile-menu"
+    class="md:hidden overflow-hidden max-h-0 opacity-0 -translate-y-2
+           transition-all duration-300 ease-out
+           bg-black/90 border-t border-white/10"
+  >
+    <ul class="flex flex-col px-6 py-6 space-y-4 text-sm">
+      {links.map(link => (
+        <li>
+          <a
+            href={link.href}
+            class="block text-zinc-200 hover:text-white transition"
+          >
+            {link.label}
+          </a>
+        </li>
+      ))}
+    </ul>
+  </div>
+</nav>
+
+<script>
+  // This function runs every time a page is loaded (initially and via router)
+  function initNav() {
+    const button = document.getElementById("menu-button");
+    const menu = document.getElementById("mobile-menu");
+
+    if (!button || !menu) return;
+
+    let open = false;
+
+    const toggleMenu = (isOpen: boolean) => {
+      open = isOpen;
+      menu.classList.toggle("max-h-0", !open);
+      menu.classList.toggle("max-h-[300px]", open);
+      menu.classList.toggle("opacity-0", !open);
+      menu.classList.toggle("opacity-100", open);
+      menu.classList.toggle("-translate-y-2", !open);
+      menu.classList.toggle("translate-y-0", open);
+    };
+
+    button.addEventListener("click", () => toggleMenu(!open));
+
+    // Close menu when a link is clicked
+    menu.querySelectorAll("a").forEach(link => {
+      link.addEventListener("click", () => toggleMenu(false));
+    });
+  }
+
+  // Listen for the Astro page load event
+  document.addEventListener("astro:page-load", initNav);
+</script>

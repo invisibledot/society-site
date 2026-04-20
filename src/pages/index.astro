@@ -1,0 +1,77 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout 
+  title="The Society - Free Your Mind" 
+  description="A modern, high-performance landing page built with Astro 6."
+>
+  <section
+    id="hero"
+    class="relative min-h-screen flex items-center justify-center px-6 text-zinc-100 antialiased
+           bg-[url('/hero-bg.jpg')] bg-cover bg-center"
+  >
+    <div class="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/80"></div>
+
+    <div class="relative max-w-3xl text-center space-y-6 fade-up">
+      <h1 class="text-5xl md:text-6xl font-bold tracking-tight">
+        Free your mind
+      </h1>
+      <p class="text-lg md:text-xl text-zinc-200">
+        A clean one-page site built with Astro and deployed on Netlify.
+      </p>
+      <a
+        href="#features"
+        class="inline-block rounded-lg bg-white text-black px-6 py-3 font-medium hover:bg-zinc-200 transition"
+      >
+        Learn more
+      </a>
+    </div>
+  </section>
+
+  <section id="about" class="px-6 py-24 bg-zinc-900 text-zinc-100 scroll-mt-16">
+    <div class="max-w-3xl mx-auto space-y-6">
+        <h2 class="text-3xl font-semibold">Why this exists</h2>
+        <p class="text-zinc-400">
+          This section explains the purpose of the site in a clear,
+          human way: no fluff, no jargon.
+        </p>
+    </div>
+  </section>
+
+  <section id="features" class="px-6 py-24 bg-zinc-950 text-zinc-100 scroll-mt-16">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-3xl font-semibold text-center mb-12">
+        What you get
+      </h2>
+
+      <div class="grid gap-8 md:grid-cols-3">
+        {[
+          { title: "Fast & lightweight", desc: "Built with Astro 6 for maximum speed." },
+          { title: "Clean structure", desc: "Easy to read and modify code." },
+          { title: "Easy to deploy", desc: "Ready for Netlify or Vercel." },
+        ].map(feature => (
+          <div class="rounded-xl bg-zinc-900 p-6 border border-white/5">
+            <h3 class="font-medium mb-2 text-white">{feature.title}</h3>
+            <p class="text-sm text-zinc-400">
+              {feature.desc}
+            </p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section id="cta" class="px-6 py-32 bg-zinc-900 text-center text-zinc-100 scroll-mt-16">
+    <div class="max-w-2xl mx-auto space-y-6">
+      <h2 class="text-4xl font-semibold">Ready to start?</h2>
+      <p class="text-zinc-400">Join our society and start your journey today.</p>
+      <a
+        href="mailto:hello@example.com"
+        class="inline-block rounded-lg bg-white text-black px-8 py-4 font-medium hover:bg-zinc-200 transition"
+      >
+        Get in touch
+      </a>
+    </div>
+  </section>
+</Layout>
