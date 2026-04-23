@@ -2,19 +2,30 @@
 import Layout from "../layouts/Layout.astro";
 ---
 
-<Layout title="Philosophy | The Society" description="A distributed movement to reclaim the commons and combat digital atomization.">
+<Layout title="Philosophy | Agora" description="A distributed movement to reclaim the commons and combat digital atomization.">
   
   <article class="pt-32 pb-24 px-6 text-zinc-100 antialiased">
     <div class="max-w-3xl mx-auto space-y-12">
       
       <header class="space-y-4">
-        <h1 class="text-4xl md:text-6xl font-bold tracking-tight">The Manifesto</h1>
+        <h1 class="text-4xl md:text-6xl font-bold tracking-tight">Our Philosophy</h1>
         <p class="text-xl text-zinc-400 font-serif italic">
           “The first step in reclaiming the world is looking away from the screen.”
         </p>
       </header>
 
-      <hr class="border-zinc-800" />
+      <section class="grid md:grid-cols-2 gap-12 py-12 border-y border-zinc-800">
+  <div>
+    <h3 class="text-white font-bold mb-4 uppercase tracking-widest text-sm">The Enclosure of Time</h3>
+    <p class="text-4xl font-bold text-white mb-2">6h 40m</p>
+    <p class="text-zinc-500 text-sm">Spent online daily by the average human. We are reclaiming those 46 hours a week for the commons.</p>
+  </div>
+  <div>
+    <h3 class="text-white font-bold mb-4 uppercase tracking-widest text-sm">The Loneliness Tax</h3>
+    <p class="text-4xl font-bold text-white mb-2">200%</p>
+    <p class="text-zinc-500 text-sm">Increase in reported social isolation for heavy digital users. We replace algorithms with Sponsors.</p>
+  </div>
+</section>
 
       <section class="space-y-6">
         <h2 class="text-2xl font-semibold text-white">01. The Crisis of Atomization</h2>
@@ -26,15 +37,22 @@ import Layout from "../layouts/Layout.astro";
         </p>
       </section>
 
-      <section class="space-y-6 p-8 bg-zinc-900 rounded-2xl border border-white/5">
-        <h2 class="text-2xl font-semibold text-white">02. Distributed, Not Centralized</h2>
+      <section class="space-y-6">
+        <h2 class="text-2xl font-semibold text-white">02. Reclaiming Public Space</h2>
         <p class="text-zinc-400 leading-relaxed">
-          Traditional movements often fail because they are top-heavy. The Society operates on a <strong>distributed organizing model</strong>. 
+          If we want to change our relationship with society and technology, personal lifestyle changes are not enough. Our digital spaces are designed to monetize and commodify our lives because they are private spaces, owned and designed by private interests — just as our offline communities increasingly are as well. The only way to change the way that these spaces are designed is to <strong>change their ownership.</strong>
+          </p>
+      </section>
+
+      <section class="space-y-6 p-8 bg-zinc-900 rounded-2xl border border-white/5">
+        <h2 class="text-2xl font-semibold text-white">03. Distributed, Not Centralized</h2>
+        <p class="text-zinc-400 leading-relaxed">
+          Traditional movements often fail because they are top-heavy. Agora operates on a <strong>distributed organizing model</strong>. 
         </p>
         <ul class="space-y-4">
           <li class="flex gap-4">
             <span class="text-white font-mono">A.</span>
-            <span><strong class="text-zinc-200">The Local Cell:</strong> Each chapter is autonomous, making decisions based on the needs of its specific physical neighborhood.</span>
+            <span><strong class="text-zinc-200">The Local Chapter:</strong> Each chapter is autonomous, making decisions based on the needs of its specific physical neighborhood.</span>
           </li>
           <li class="flex gap-4">
             <span class="text-white font-mono">B.</span>
@@ -48,19 +66,27 @@ import Layout from "../layouts/Layout.astro";
       </section>
 
       <section class="space-y-6">
-        <h2 class="text-2xl font-semibold text-white">03. Technology as a Tool for Exit</h2>
+        <h2 class="text-2xl font-semibold text-white">04. Technology as a Tool for Exit</h2>
         <p class="text-zinc-400 leading-relaxed">
-          Most apps are designed to keep you inside them. <strong>Social Network</strong> is designed to push you out. By functioning as a utilitarian bulletin board, it strips away the dopamine loops of modern social media, leaving only the logistics of rebellion.
+          Most apps are designed to keep you inside them. <strong>The Agora App</strong> is designed to push you out. By functioning as a utilitarian bulletin board, it strips away the dopamine loops of modern social media, leaving only the logistics of rebellion.
         </p>
         <p class="text-zinc-400 leading-relaxed font-medium text-zinc-200">
           We use digital tools to build a world that eventually won’t need them.
         </p>
       </section>
 
+            <section class="space-y-6">
+        <h2 class="text-2xl font-semibold text-white">05. Rebuilding Trust in Each Other</h2>
+        <p class="text-zinc-400 leading-relaxed">
+The crisis of community is also a crisis of <strong>trust</strong>. We need to rebuild trust in ourselves, in each other, and perhaps most importantly, in collective action. Capitalism offers a false sense of individual autonomy through the illusion of personal choice. In contract, participating in a collective project requires us to submit some of our autonomy for the sake of group discipline.        </p>
+        <p class="text-zinc-400 leading-relaxed font-medium text-zinc-200">
+For an alienated individual who's been raised to make a fetish of their individuality, this can be a frightening prospect. When we have so little experience of collective action, it’s easy to mistake group discipline for authoritarianism. We can't combat that fear through education, only through a slowly increasing level of experience with the value and the power of collective action.        </p>
+      </section>
+
       <footer class="pt-12 border-t border-zinc-800">
-        <p class="text-sm text-zinc-500 mb-6">Want to learn more about the theory behind our movement?</p>
-        <a href="mailto:theory@thesociety.org" class="text-white underline underline-offset-4 hover:text-zinc-300">
-          Request the Reading List
+        <p class="text-sm text-zinc-500 mb-6">Are you ready to grow the movement for public life?</p>
+        <a href="/quorum" class="text-white underline underline-offset-4 hover:text-zinc-300">
+          Find out about Quorum
         </a>
       </footer>
 
