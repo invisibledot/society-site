@@ -4,155 +4,119 @@ import Layout from "../layouts/Layout.astro";
 
 <Layout title="Organization | Agora" description="Understanding the distributed structure and the sponsor system of our community.">
   
-  <section class="pt-32 pb-24 px-6 text-zinc-100">
-    <div class="max-w-5xl mx-auto space-y-20">
+  <section class="pt-32 pb-24 px-6 bg-olive-50 text-olive-900">
+    <div class="max-w-5xl mx-auto space-y-24">
       
       <div class="max-w-3xl">
-        <h1 class="text-5xl font-bold tracking-tight mb-6">The Structure</h1>
-        <p class="text-xl text-zinc-400">
-          Agora’s structure combines the resilience of interpersonal bonds with the power of mass organization.
+        <div class="inline-block px-3 py-1 rounded-full bg-amber-100 border border-amber-200 text-[10px] font-mono uppercase tracking-[0.2em] text-amber-700 font-bold mb-6">
+          System Architecture
+        </div>
+        <h1 class="text-5xl md:text-6xl font-bold tracking-tight mb-6 text-olive-950">The Structure</h1>
+        <p class="text-xl text-olive-800 leading-relaxed font-serif italic">
+          Agora’s structure combines the resilience of interpersonal bonds with the power of mass organization. We are a mesh, not a monolith.
         </p>
       </div>
 
       <div class="grid md:grid-cols-2 gap-12 items-center">
         <div class="space-y-6">
-          <div class="inline-block px-3 py-1 rounded-md bg-white/10 text-white text-xs font-mono">Level 01: The Bond</div>
-          <h2 class="text-3xl font-semibold">The Sponsor System</h2>
-          <p class="text-zinc-400 leading-relaxed">
-            No one enters Agora alone. Every new member is paired with a <strong>Sponsor</strong>—a seasoned member who acts as a guide and an accountability partner.
+          <div class="inline-block px-3 py-1 rounded-md bg-olive-900 text-amber-400 text-[10px] font-mono font-bold uppercase tracking-widest">Level 01: The Bond</div>
+          <h2 class="text-3xl font-bold text-olive-950">The Sponsor System</h2>
+          <p class="text-olive-800 leading-relaxed">
+            No one enters Agora alone. Every new member is paired with a <strong class="text-amber-700">Sponsor</strong>—a seasoned member who acts as a guide, a mentor, and an accountability partner.
           </p>
         </div>
-        <div class="p-8 bg-zinc-900 rounded-2xl border border-white/5 flex flex-col justify-center items-center text-center space-y-4">
-           <div class="w-16 h-16 rounded-full bg-zinc-800 border border-white/20"></div>
-           <div class="w-px h-8 bg-white/20"></div>
-           <div class="w-16 h-16 rounded-full bg-white text-black flex items-center justify-center font-bold">You</div>
-           <p class="text-sm font-mono text-zinc-500 uppercase">Direct Accountability</p>
+        <div class="p-12 bg-white rounded-[3rem] border border-olive-200 shadow-sm flex flex-col justify-center items-center text-center space-y-4">
+           <div class="w-16 h-16 rounded-full bg-olive-100 border border-olive-200 flex items-center justify-center text-olive-400">
+             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+           </div>
+           <div class="w-px h-8 bg-gradient-to-b from-olive-200 to-amber-500"></div>
+           <div class="w-16 h-16 rounded-full bg-olive-900 text-white flex items-center justify-center font-bold shadow-lg shadow-olive-900/20">You</div>
+           <p class="text-[10px] font-mono text-amber-600 font-bold uppercase tracking-widest">Direct Accountability</p>
         </div>
       </div>
 
-      <div class="space-y-12">
-        <div class="grid md:grid-cols-2 gap-12 items-center">
-          <div class="space-y-6">
-            <div class="inline-block px-3 py-1 rounded-md bg-white/10 text-white text-xs font-mono">Level 02: The Cell</div>
-            <h2 class="text-3xl font-semibold">Distributed Chapters</h2>
-            <p class="text-zinc-400 leading-relaxed">
-              Chapters are local, autonomous nodes capped at <strong>Dunbar's Number</strong> to ensure every member actually knows everyone else.
-            </p>
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div class="relative w-full max-w-lg mx-auto h-80 flex items-center justify-center bg-white rounded-[3rem] border border-olive-200 shadow-sm order-2 md:order-1 overflow-hidden">
+          <svg class="absolute inset-0 w-full h-full text-olive-100" xmlns="http://www.w3.org/2000/svg">
+            <path d="M50,40 L90,120 L10,120 Z" fill="none" stroke="currentColor" stroke-width="1" class="opacity-50" />
+            <line x1="50%" y1="10%" x2="90%" y2="40%" stroke="currentColor" stroke-width="2" />
+            <line x1="90%" y1="40%" x2="75%" y2="90%" stroke="currentColor" stroke-width="2" />
+            <line x1="75%" y1="90%" x2="25%" y2="90%" stroke="currentColor" stroke-width="2" />
+            <line x1="25%" y1="90%" x2="10%" y2="40%" stroke="currentColor" stroke-width="2" />
+            <line x1="10%" y1="40%" x2="50%" y2="10%" stroke="currentColor" stroke-width="2" />
+          </svg>
+          <div class="relative z-10 w-24 h-24 rounded-full bg-olive-900 text-white flex flex-col items-center justify-center text-[10px] font-bold uppercase shadow-xl border-4 border-white">
+            <span class="text-amber-400 mb-1">Local</span>
+            <span>Cell</span>
           </div>
-          <div class="p-8 bg-zinc-900 rounded-2xl border border-white/5 flex flex-col justify-center items-center text-center space-y-4">
-          <div class="relative w-full max-w-lg mx-auto h-80 flex items-center justify-center">
-            <svg class="absolute inset-0 w-full h-full text-zinc-800" xmlns="http://www.w3.org/2000/svg">
-              <line x1="50%" y1="10%" x2="90%" y2="40%" stroke="currentColor" stroke-width="1" />
-              <line x1="90%" y1="40%" x2="75%" y2="90%" stroke="currentColor" stroke-width="1" />
-              <line x1="75%" y1="90%" x2="25%" y2="90%" stroke="currentColor" stroke-width="1" />
-              <line x1="25%" y1="90%" x2="10%" y2="40%" stroke="currentColor" stroke-width="1" />
-              <line x1="10%" y1="40%" x2="50%" y2="10%" stroke="currentColor" stroke-width="1" />
-              <line x1="50%" y1="10%" x2="25%" y2="90%" stroke="currentColor" stroke-width="1" stroke-dasharray="4" />
-              <line x1="90%" y1="40%" x2="10%" y2="40%" stroke="currentColor" stroke-width="1" stroke-dasharray="4" />
-            </svg>
-            <div class="relative z-10 w-20 h-20 rounded-full bg-white text-black flex flex-col items-center justify-center text-[10px] font-bold uppercase">
-              <span>Local Cell</span>
-            </div>
-            <div class="absolute top-[10%] left-1/2 -translate-x-1/2 w-6 h-6 rounded-full bg-zinc-800 border border-white/20"></div>
-            <div class="absolute top-[40%] right-[10%] w-6 h-6 rounded-full bg-zinc-800 border border-white/20"></div>
-            <div class="absolute bottom-[10%] right-[25%] w-6 h-6 rounded-full bg-zinc-800 border border-white/20"></div>
-            <div class="absolute bottom-[10%] left-[25%] w-6 h-6 rounded-full bg-zinc-800 border border-white/20"></div>
-            <div class="absolute top-[40%] left-[10%] w-6 h-6 rounded-full bg-zinc-800 border border-white/20"></div>
-          </div>
+          <div class="absolute top-[10%] left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-amber-500 border-4 border-white shadow-sm"></div>
+          <div class="absolute top-[40%] right-[10%] w-4 h-4 rounded-full bg-olive-200 border-4 border-white shadow-sm"></div>
+          <div class="absolute bottom-[10%] right-[25%] w-4 h-4 rounded-full bg-olive-200 border-4 border-white shadow-sm"></div>
+          <div class="absolute bottom-[10%] left-[25%] w-4 h-4 rounded-full bg-olive-200 border-4 border-white shadow-sm"></div>
+          <div class="absolute top-[40%] left-[10%] w-4 h-4 rounded-full bg-olive-200 border-4 border-white shadow-sm"></div>
+        </div>
+        <div class="space-y-6 order-1 md:order-2">
+          <div class="inline-block px-3 py-1 rounded-md bg-olive-900 text-amber-400 text-[10px] font-mono font-bold uppercase tracking-widest">Level 02: The Cell</div>
+          <h2 class="text-3xl font-bold text-olive-950">Distributed Chapters</h2>
+          <p class="text-olive-800 leading-relaxed">
+            Chapters are local, autonomous nodes capped at <strong>Dunbar's Number</strong>. This ensures that every member of a cell actually knows, trusts, and supports every other member.
+          </p>
+        </div>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div class="space-y-6">
+          <div class="inline-block px-3 py-1 rounded-md bg-olive-900 text-amber-400 text-[10px] font-mono font-bold uppercase tracking-widest">Level 03: The Movement</div>
+          <h2 class="text-3xl font-bold text-olive-950">Global Coordination</h2>
+          <p class="text-olive-800 leading-relaxed">
+            While action is local, strategy is global. Regional nodes connect to the <a href="/quorum" class="text-amber-700 underline decoration-amber-200 hover:decoration-amber-500 transition-all font-bold">Quorum</a> to synchronize efforts.
+          </p>
+        </div>
+        <div class="relative w-full max-w-lg mx-auto h-80 flex items-center justify-center bg-white rounded-[3rem] border border-olive-200 shadow-sm p-8 overflow-hidden">
+          <svg class="absolute inset-0 w-full h-full text-amber-100" xmlns="http://www.w3.org/2000/svg">
+            <line x1="50%" y1="50%" x2="50%" y2="15%" stroke="currentColor" stroke-width="2" />
+            <line x1="50%" y1="50%" x2="85%" y2="35%" stroke="currentColor" stroke-width="2" />
+            <line x1="50%" y1="50%" x2="80%" y2="75%" stroke="currentColor" stroke-width="2" />
+            <line x1="50%" y1="50%" x2="20%" y2="75%" stroke="currentColor" stroke-width="2" />
+            <line x1="50%" y1="50%" x2="15%" y2="35%" stroke="currentColor" stroke-width="2" />
+          </svg>
+          <div class="relative z-10 w-28 h-28 rounded-full bg-olive-950 text-white flex flex-col items-center justify-center text-center p-2 shadow-2xl border-4 border-amber-500/20">
+            <span class="text-[8px] font-mono uppercase tracking-[0.2em] text-amber-500 mb-1">Strategic Core</span>
+            <span class="text-xs font-bold uppercase tracking-tight">The Quorum</span>
           </div>
         </div>
       </div>
 
-      <div class="space-y-12">
-  <div class="grid md:grid-cols-2 gap-12 items-center">
-    
-    <div class="space-y-6">
-      <div class="inline-block px-3 py-1 rounded-md bg-white/10 text-white text-xs font-mono">Level 03: The Movement</div>
-      <h2 class="text-3xl font-semibold">Global Coordination</h2>
-      <p class="text-zinc-400 leading-relaxed">
-        While action is local, our strategy is global. Regional nodes connect to <strong>Central Leadership</strong> to synchronize efforts against neoliberal hegemony. 
-      </p>
-      <p class="text-zinc-400 leading-relaxed">
-        The Hub provides the "Social Network" infrastructure, legal support, and unified messaging, ensuring that thousands of autonomous chapters move as one cohesive force for social change.
-      </p>
-    </div>
-          <div class="p-8 bg-zinc-900 rounded-2xl border border-white/5 flex flex-col justify-center items-center text-center space-y-4">
-    <div class="relative w-full max-w-lg mx-auto h-80 flex items-center justify-center">
-      <svg class="absolute inset-0 w-full h-full text-zinc-800" xmlns="http://www.w3.org/2000/svg">
-        <line x1="50%" y1="50%" x2="50%" y2="15%" stroke="white" stroke-width="1" stroke-opacity="0.3" />
-        <line x1="50%" y1="50%" x2="85%" y2="35%" stroke="white" stroke-width="1" stroke-opacity="0.3" />
-        <line x1="50%" y1="50%" x2="80%" y2="75%" stroke="white" stroke-width="1" stroke-opacity="0.3" />
-        <line x1="50%" y1="50%" x2="20%" y2="75%" stroke="white" stroke-width="1" stroke-opacity="0.3" />
-        <line x1="50%" y1="50%" x2="15%" y2="35%" stroke="white" stroke-width="1" stroke-opacity="0.3" />
-        
-        <path d="M 50,15 Q 85,35 80,75 Q 20,75 15,35 Q 50,15" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="4" />
-      </svg>
-
-      <div class="relative z-10 w-24 h-24 rounded-full bg-white text-black flex flex-col items-center justify-center text-center p-2 shadow-[0_0_50px_rgba(255,255,255,0.1)]">
-        <span class="text-[10px] font-mono uppercase tracking-tighter leading-none mb-1">Central</span>
-        <span class="text-xs font-bold uppercase">Leadership</span>
-      </div>
-
-      <div class="absolute top-[15%] left-1/2 -translate-x-1/2 w-10 h-10 rounded-full bg-zinc-900 border border-white/20 flex items-center justify-center text-[8px] font-mono text-zinc-400">EU</div>
-      <div class="absolute top-[35%] right-[15%] w-10 h-10 rounded-full bg-zinc-900 border border-white/20 flex items-center justify-center text-[8px] font-mono text-zinc-400">NA</div>
-      <div class="absolute bottom-[25%] right-[20%] w-10 h-10 rounded-full bg-zinc-900 border border-white/20 flex items-center justify-center text-[8px] font-mono text-zinc-400">AS</div>
-      <div class="absolute bottom-[25%] left-[20%] w-10 h-10 rounded-full bg-zinc-900 border border-white/20 flex items-center justify-center text-[8px] font-mono text-zinc-400">AF</div>
-      <div class="absolute top-[35%] left-[15%] w-10 h-10 rounded-full bg-zinc-900 border border-white/20 flex items-center justify-center text-[8px] font-mono text-zinc-400">SA</div>
-    </div>
-    </div>
-
-  </div>
-</div>
-
-      <div id="map-section" class="space-y-8 pt-12 border-t border-zinc-800">
-        <div class="text-center">
-          <h2 class="text-3xl font-semibold">Active Nodes</h2>
-          <p class="text-zinc-500 mt-2 text-sm uppercase tracking-widest font-mono">The movement is spreading</p>
+      <div id="map-section" class="space-y-12 pt-16 border-t border-olive-200">
+        <div class="text-center space-y-2">
+          <h2 class="text-4xl font-bold text-olive-950 tracking-tight">Active Nodes</h2>
+          <p class="text-amber-600 text-xs uppercase tracking-[0.3em] font-mono font-bold">The network is live</p>
         </div>
         
-        <div class="relative w-full aspect-video bg-zinc-950 rounded-3xl border border-white/5 overflow-hidden">
-        <div 
-          class="absolute inset-0 bg-zinc-800"
-          style="mask-image: url('/world.svg'); mask-size: contain; mask-repeat: no-repeat; mask-position: center; -webkit-mask-image: url('/world.svg'); -webkit-mask-size: contain; -webkit-mask-repeat: no-repeat; -webkit-mask-position: center;"
-        >
-        </div>
+        <div class="relative w-full aspect-video bg-white rounded-[3rem] border border-olive-200 overflow-hidden shadow-inner group">
+          <img 
+            src="/world.svg" 
+            alt="Movement Map" 
+            class="absolute inset-0 w-full h-full object-contain opacity-20 brightness-75 grayscale contrast-125 transition-opacity group-hover:opacity-30"
+          />
 
-        <div class="relative w-full aspect-video bg-zinc-950 rounded-3xl border border-white/5 overflow-hidden">
-  <img 
-    src="/world.svg" 
-    alt="Movement Map" 
-    class="absolute inset-0 w-full h-full object-contain opacity-10"
-  />
-
-  <svg class="absolute inset-0 w-full h-full text-white/20" viewBox="0 0 100 100" preserveAspectRatio="none">
-    <line x1="25" y1="40" x2="48" y2="30" stroke="currentColor" stroke-width="0.2" stroke-dasharray="1" />
-    
-    </svg>
-
-  <div class="absolute top-[40%] left-[25%]">
-    <span class="absolute inline-flex h-3 w-3 rounded-full bg-white animate-ping-slow opacity-75"></span>
-    <span class="relative inline-flex rounded-full h-3 w-3 bg-white"></span>
-  </div>
-
-  <div class="absolute top-[30%] left-[48%]">
-    <span class="absolute inline-flex h-3 w-3 rounded-full bg-white animate-ping-slow opacity-75"></span>
-    <span class="relative inline-flex rounded-full h-3 w-3 bg-white"></span>
-  </div>
-</div>
-
-          <div class="absolute top-[30%] left-[48%]">
-            <span class="absolute inline-flex h-3 w-3 rounded-full bg-white animate-ping-slow opacity-75"></span>
-            <span class="relative inline-flex rounded-full h-3 w-3 bg-white"></span>
-          </div>
+          <svg class="absolute inset-0 w-full h-full text-amber-500/20" viewBox="0 0 100 100" preserveAspectRatio="none">
+            <line x1="25" y1="40" x2="48" y2="30" stroke="currentColor" stroke-width="0.5" stroke-dasharray="2" />
+          </svg>
 
           <div class="absolute top-[40%] left-[25%]">
-            <span class="absolute inline-flex h-3 w-3 rounded-full bg-white animate-ping-slow opacity-75"></span>
-            <span class="relative inline-flex rounded-full h-3 w-3 bg-white"></span>
+            <span class="absolute inline-flex h-6 w-6 rounded-full bg-amber-400 animate-ping opacity-40"></span>
+            <span class="relative inline-flex rounded-full h-3 w-3 bg-amber-600 border-2 border-white shadow-sm"></span>
+          </div>
+
+          <div class="absolute top-[30%] left-[48%]">
+            <span class="absolute inline-flex h-6 w-6 rounded-full bg-amber-400 animate-ping opacity-40"></span>
+            <span class="relative inline-flex rounded-full h-3 w-3 bg-amber-600 border-2 border-white shadow-sm"></span>
           </div>
         </div>
         
-        <p class="text-center text-sm text-zinc-500 italic">
-          Exact locations are only visible to verified members via the Social Network app.
+        <p class="text-center text-xs text-olive-500 font-mono uppercase tracking-widest max-w-lg mx-auto bg-white py-2 px-4 rounded-full border border-olive-100 shadow-sm">
+          Security protocol: Locations restricted to verified members.
         </p>
       </div>
 

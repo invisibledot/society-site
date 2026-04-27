@@ -4,12 +4,15 @@ import Layout from "../layouts/Layout.astro";
 
 <Layout title="Resources | Agora" description="Download tools, posters, and guides to help build the Agora in your community.">
   
-  <section class="pt-32 pb-24 px-6 text-zinc-100">
+  <section class="pt-32 pb-24 px-6 bg-olive-50 text-olive-900 antialiased">
     <div class="max-w-5xl mx-auto space-y-16">
       
-      <header class="max-w-3xl space-y-4">
-        <h1 class="text-5xl font-bold tracking-tight">The Toolkit</h1>
-        <p class="text-xl text-zinc-400">
+      <header class="max-w-3xl space-y-6">
+        <div class="inline-block px-3 py-1 rounded-full bg-amber-100 border border-amber-200 text-[10px] font-mono uppercase tracking-[0.2em] text-amber-700 font-bold">
+          Member Assets
+        </div>
+        <h1 class="text-5xl md:text-6xl font-bold tracking-tight text-olive-950">The Toolkit</h1>
+        <p class="text-xl text-olive-800 leading-relaxed font-serif italic border-l-4 border-amber-500 pl-6">
           Everything you need to signal the movement and organize your local cell. Agora spreads through physical presence and shared identity.
         </p>
       </header>
@@ -17,78 +20,96 @@ import Layout from "../layouts/Layout.astro";
       <div class="grid md:grid-cols-2 gap-12">
         
         <div class="space-y-6">
-          <h2 class="text-2xl font-semibold border-b border-zinc-800 pb-2">01. Analog Signal (Print)</h2>
-          <p class="text-sm text-zinc-500">For the streets, community boards, and local gathering spots.</p>
+          <div class="flex items-center gap-3">
+             <h2 class="text-2xl font-bold text-olive-950">01. Analog Signal</h2>
+             <div class="h-px flex-1 bg-olive-200"></div>
+          </div>
+          <p class="text-sm text-olive-600 font-medium italic">For the streets, community boards, and local gathering spots.</p>
           
           <ul class="space-y-4">
-            <li class="p-4 bg-zinc-900 rounded-xl border border-white/5 flex justify-between items-center group">
+            <li class="p-6 bg-white rounded-3xl border border-olive-200 flex justify-between items-center group shadow-sm hover:border-amber-400 transition-all">
               <div>
-                <p class="font-bold">The "Exit" Poster Series</p>
-                <p class="text-xs text-zinc-500 underline">PDF / B&W / A4 & US Letter</p>
+                <p class="font-bold text-olive-900">The “Exit” Poster Series</p>
+                <p class="text-[10px] text-olive-500 font-mono uppercase tracking-widest mt-1">PDF / B&W / A4 & US Letter</p>
               </div>
-              <button class="bg-white text-black text-xs px-4 py-2 rounded-lg font-bold opacity-80 group-hover:opacity-100">Download</button>
+              <button class="bg-olive-900 text-white text-[10px] px-5 py-2 rounded-full font-bold uppercase tracking-widest hover:bg-amber-600 transition active:scale-95 shadow-md shadow-olive-900/10">
+                Get File
+              </button>
             </li>
-            <li class="p-4 bg-zinc-900 rounded-xl border border-white/5 flex justify-between items-center group">
+            <li class="p-6 bg-white rounded-3xl border border-olive-200 flex justify-between items-center group shadow-sm hover:border-amber-400 transition-all">
               <div>
-                <p class="font-bold">Cell Invitation Cards</p>
-                <p class="text-xs text-zinc-500 underline">PDF / Business Card Size</p>
+                <p class="font-bold text-olive-900">Cell Invitation Cards</p>
+                <p class="text-[10px] text-olive-500 font-mono uppercase tracking-widest mt-1">PDF / 3.5" x 2"</p>
               </div>
-              <button class="bg-white text-black text-xs px-4 py-2 rounded-lg font-bold opacity-80 group-hover:opacity-100">Download</button>
+              <button class="bg-olive-900 text-white text-[10px] px-5 py-2 rounded-full font-bold uppercase tracking-widest hover:bg-amber-600 transition active:scale-95 shadow-md shadow-olive-900/10">
+                Get File
+              </button>
             </li>
-            <li class="p-4 bg-zinc-900 rounded-xl border border-white/5 flex justify-between items-center group">
+            <li class="p-6 bg-white rounded-3xl border border-olive-200 flex justify-between items-center group shadow-sm hover:border-amber-400 transition-all">
               <div>
-                <p class="font-bold">Agora Logo Stencil</p>
-                <p class="text-xs text-zinc-500 underline">SVG / DXF for Laser Cutting</p>
+                <p class="font-bold text-olive-900">Agora Logo Stencil</p>
+                <p class="text-[10px] text-olive-500 font-mono uppercase tracking-widest mt-1">SVG / DXF for Laser</p>
               </div>
-              <button class="bg-white text-black text-xs px-4 py-2 rounded-lg font-bold opacity-80 group-hover:opacity-100">Download</button>
+              <button class="bg-olive-900 text-white text-[10px] px-5 py-2 rounded-full font-bold uppercase tracking-widest hover:bg-amber-600 transition active:scale-95 shadow-md shadow-olive-900/10">
+                Get File
+              </button>
             </li>
           </ul>
         </div>
 
         <div class="space-y-6">
-          <h2 class="text-2xl font-semibold border-b border-zinc-800 pb-2">02. Digital Identity</h2>
-          <p class="text-sm text-zinc-500">For the Social Network app and internal coordination.</p>
+          <div class="flex items-center gap-3">
+             <h2 class="text-2xl font-bold text-olive-950">02. Digital Identity</h2>
+             <div class="h-px flex-1 bg-olive-200"></div>
+          </div>
+          <p class="text-sm text-olive-600 font-medium italic">For the Social Network app and internal coordination.</p>
           
           <ul class="space-y-4">
-            <li class="p-4 bg-zinc-900 rounded-xl border border-white/5 flex justify-between items-center group">
+            <li class="p-6 bg-white rounded-3xl border border-olive-200 flex justify-between items-center group shadow-sm hover:border-amber-400 transition-all">
               <div>
-                <p class="font-bold">Agora Brand Kit</p>
-                <p class="text-xs text-zinc-500 underline">Logos / Typography / Colors</p>
+                <p class="font-bold text-olive-900">Agora Brand Kit</p>
+                <p class="text-[10px] text-olive-500 font-mono uppercase tracking-widest mt-1">Logos / Typography / Palette</p>
               </div>
-              <button class="bg-white text-black text-xs px-4 py-2 rounded-lg font-bold opacity-80 group-hover:opacity-100">Download</button>
+              <button class="bg-olive-900 text-white text-[10px] px-5 py-2 rounded-full font-bold uppercase tracking-widest hover:bg-amber-600 transition active:scale-95 shadow-md shadow-olive-900/10">
+                Get File
+              </button>
             </li>
-            <li class="p-4 bg-zinc-900 rounded-xl border border-white/5 flex justify-between items-center group">
+            <li class="p-6 bg-white rounded-3xl border border-olive-200 flex justify-between items-center group shadow-sm hover:border-amber-400 transition-all">
               <div>
-                <p class="font-bold">Leader Dashboard Icons</p>
-                <p class="text-xs text-zinc-500 underline">PNG / SVG Set</p>
+                <p class="font-bold text-olive-900">Leader Dashboard Icons</p>
+                <p class="text-[10px] text-olive-500 font-mono uppercase tracking-widest mt-1">PNG / SVG Icon Set</p>
               </div>
-              <button class="bg-white text-black text-xs px-4 py-2 rounded-lg font-bold opacity-80 group-hover:opacity-100">Download</button>
+              <button class="bg-olive-900 text-white text-[10px] px-5 py-2 rounded-full font-bold uppercase tracking-widest hover:bg-amber-600 transition active:scale-95 shadow-md shadow-olive-900/10">
+                Get File
+              </button>
             </li>
           </ul>
         </div>
-
       </div>
 
-      <div class="bg-zinc-900/50 p-8 md:p-12 rounded-3xl border border-white/5 space-y-8">
-        <div class="max-w-2xl">
-          <h2 class="text-2xl font-semibold mb-4">03. The Discourse</h2>
-          <p class="text-zinc-400">
+      <div class="bg-olive-950 p-10 md:p-16 rounded-[3rem] shadow-2xl space-y-12 relative overflow-hidden">
+        <div class="absolute -top-24 -left-24 w-64 h-64 bg-amber-500/10 blur-[100px] rounded-full"></div>
+        
+        <div class="max-w-2xl relative z-10">
+          <h2 class="text-xs font-mono font-bold text-amber-500 uppercase tracking-[0.3em] mb-4">03. The Discourse</h2>
+          <h3 class="text-4xl font-bold text-white mb-6 tracking-tight">Intellectual Stewardship</h3>
+          <p class="text-olive-300 leading-relaxed text-lg">
             How we speak about the movement matters. These guides help Chapter Leaders navigate the transition from “online users” to “offline stewards.”
           </p>
         </div>
 
-        <div class="grid md:grid-cols-3 gap-6">
-          <a href="#" class="block p-6 bg-zinc-950 rounded-2xl hover:border-white/20 border border-transparent transition">
-            <h3 class="font-bold mb-2 uppercase text-xs tracking-widest text-zinc-500">Guide</h3>
-            <p class="text-white">Talking to the Loneliness Epidemic</p>
+        <div class="grid md:grid-cols-3 gap-6 relative z-10">
+          <a href="#" class="group block p-8 bg-olive-900 rounded-[2rem] border border-olive-800 hover:border-amber-500 transition-all hover:-translate-y-1 shadow-lg">
+            <h4 class="font-bold mb-3 uppercase text-[10px] tracking-[0.3em] text-amber-500 font-mono">Guide</h4>
+            <p class="text-white font-bold leading-tight text-lg group-hover:text-amber-100 transition-colors">Addressing the Loneliness Epidemic</p>
           </a>
-          <a href="#" class="block p-6 bg-zinc-950 rounded-2xl hover:border-white/20 border border-transparent transition">
-            <h3 class="font-bold mb-2 uppercase text-xs tracking-widest text-zinc-500">Primer</h3>
-            <p class="text-white">Understanding Neoliberal Atomization</p>
+          <a href="#" class="group block p-8 bg-olive-900 rounded-[2rem] border border-olive-800 hover:border-amber-500 transition-all hover:-translate-y-1 shadow-lg">
+            <h4 class="font-bold mb-3 uppercase text-[10px] tracking-[0.3em] text-amber-500 font-mono">Primer</h4>
+            <p class="text-white font-bold leading-tight text-lg group-hover:text-amber-100 transition-colors">Understanding Neoliberal Atomization</p>
           </a>
-          <a href="#" class="block p-6 bg-zinc-950 rounded-2xl hover:border-white/20 border border-transparent transition">
-            <h3 class="font-bold mb-2 uppercase text-xs tracking-widest text-zinc-500">Manual</h3>
-            <p class="text-white">Stewardship vs. Subscription</p>
+          <a href="#" class="group block p-8 bg-olive-900 rounded-[2rem] border border-olive-800 hover:border-amber-500 transition-all hover:-translate-y-1 shadow-lg">
+            <h4 class="font-bold mb-3 uppercase text-[10px] tracking-[0.3em] text-amber-500 font-mono">Manual</h4>
+            <p class="text-white font-bold leading-tight text-lg group-hover:text-amber-100 transition-colors">Stewardship vs. Subscription</p>
           </a>
         </div>
       </div>

@@ -4,90 +4,124 @@ import Layout from "../layouts/Layout.astro";
 
 <Layout title="Philosophy | Agora" description="A distributed movement to reclaim the commons and combat digital atomization.">
   
-  <article class="pt-32 pb-24 px-6 text-zinc-100 antialiased">
-    <div class="max-w-3xl mx-auto space-y-12">
+  <article class="pt-32 pb-24 px-6 bg-olive-50 text-olive-900 antialiased">
+    <div class="max-w-3xl mx-auto space-y-16">
       
-      <header class="space-y-4">
-        <h1 class="text-4xl md:text-6xl font-bold tracking-tight">Our Philosophy</h1>
-        <p class="text-xl text-zinc-400 font-serif italic">
+      <header class="space-y-6">
+        <div class="inline-block px-3 py-1 rounded-full border border-amber-200 bg-amber-50 text-[10px] font-mono uppercase tracking-[0.2em] text-amber-700 font-bold">
+          Manifesto 01
+        </div>
+        <h1 class="text-5xl md:text-7xl font-bold tracking-tight text-olive-950">
+          Our Philosophy
+        </h1>
+        <p class="text-xl text-olive-800 font-serif italic leading-relaxed border-l-4 border-amber-500 pl-6">
           “The first step in reclaiming the world is looking away from the screen.”
         </p>
       </header>
 
-      <section class="grid md:grid-cols-2 gap-12 py-12 border-y border-zinc-800">
-  <div>
-    <h3 class="text-white font-bold mb-4 uppercase tracking-widest text-sm">The Enclosure of Time</h3>
-    <p class="text-4xl font-bold text-white mb-2">6h 40m</p>
-    <p class="text-zinc-500 text-sm">Spent online daily by the average human. We are reclaiming those 46 hours a week for the commons.</p>
-  </div>
-  <div>
-    <h3 class="text-white font-bold mb-4 uppercase tracking-widest text-sm">The Loneliness Tax</h3>
-    <p class="text-4xl font-bold text-white mb-2">200%</p>
-    <p class="text-zinc-500 text-sm">Increase in reported social isolation for heavy digital users. We replace algorithms with Sponsors.</p>
-  </div>
-</section>
-
-      <section class="space-y-6">
-        <h2 class="text-2xl font-semibold text-white">01. The Crisis of Atomization</h2>
-        <p class="text-zinc-400 leading-relaxed">
-          Neoliberalism has successfully turned our social lives into a marketplace. By moving our communities onto algorithmic platforms, we have traded <strong>citizenship</strong> for <strong>usership</strong>. We are more connected than ever, yet more isolated; more “social,” yet less capable of collective action.
-        </p>
-        <p class="text-zinc-400 leading-relaxed">
-          This is not an accident. An atomized population—one that interacts only through mediated, monetized channels—is a population that cannot organize.
-        </p>
+      <section class="grid md:grid-cols-2 gap-8 py-12 border-y border-olive-200">
+        <div class="p-8 bg-white rounded-3xl border border-olive-100 shadow-sm transition-transform hover:-translate-y-1">
+          <h3 class="text-amber-600 font-bold mb-4 uppercase tracking-[0.2em] text-[10px]">The Enclosure of Time</h3>
+          <p class="text-6xl font-bold text-olive-950 mb-2 tracking-tight">6h 40m</p>
+          <p class="text-olive-700 text-sm leading-relaxed">Spent online daily by the average human. We are reclaiming those <span class="font-bold text-olive-900">46 hours a week</span> for the commons.</p>
+        </div>
+        <div class="p-8 bg-white rounded-3xl border border-olive-100 shadow-sm transition-transform hover:-translate-y-1">
+          <h3 class="text-amber-600 font-bold mb-4 uppercase tracking-[0.2em] text-[10px]">The Loneliness Tax</h3>
+          <p class="text-6xl font-bold text-olive-950 mb-2 tracking-tight">200%</p>
+          <p class="text-olive-700 text-sm leading-relaxed">Increase in reported social isolation for heavy digital users. We replace <span class="font-bold text-olive-900">algorithms with Sponsors</span>.</p>
+        </div>
       </section>
 
-      <section class="space-y-6">
-        <h2 class="text-2xl font-semibold text-white">02. Reclaiming Public Space</h2>
-        <p class="text-zinc-400 leading-relaxed">
-          If we want to change our relationship with society and technology, personal lifestyle changes are not enough. Our digital spaces are designed to monetize and commodify our lives because they are private spaces, owned and designed by private interests — just as our offline communities increasingly are as well. The only way to change the way that these spaces are designed is to <strong>change their ownership.</strong>
+      <div class="space-y-24">
+        
+        <section class="space-y-4">
+          <h2 class="text-xs font-mono font-bold text-amber-600 uppercase tracking-widest">01. The Crisis of Atomization</h2>
+          <h3 class="text-3xl font-bold text-olive-950 tracking-tight">Citizenship vs. Usership</h3>
+          <p class="text-olive-800 leading-relaxed text-lg">
+            Neoliberalism has successfully turned our social lives into a marketplace. By moving our communities onto algorithmic platforms, we have traded <strong class="text-olive-950">citizenship</strong> for <strong class="text-olive-950">usership</strong>. We are more connected than ever, yet more isolated.
           </p>
-      </section>
+          <p class="text-olive-800 leading-relaxed">
+            This is not an accident. An atomized population—one that interacts only through mediated, monetized channels—is a population that cannot organize.
+          </p>
+        </section>
 
-      <section class="space-y-6 p-8 bg-zinc-900 rounded-2xl border border-white/5">
-        <h2 class="text-2xl font-semibold text-white">03. Distributed, Not Centralized</h2>
-        <p class="text-zinc-400 leading-relaxed">
-          Traditional movements often fail because they are top-heavy. Agora operates on a <strong>distributed organizing model</strong>. 
-        </p>
-        <ul class="space-y-4">
-          <li class="flex gap-4">
-            <span class="text-white font-mono">A.</span>
-            <span><strong class="text-zinc-200">The Local Chapter:</strong> Each chapter is autonomous, making decisions based on the needs of its specific physical neighborhood.</span>
-          </li>
-          <li class="flex gap-4">
-            <span class="text-white font-mono">B.</span>
-            <span><strong class="text-zinc-200">The Social Network:</strong> Our app is the “connective tissue,” allowing leaders to share resources and strategies without the noise of the public internet.</span>
-          </li>
-          <li class="flex gap-4">
-            <span class="text-white font-mono">C.</span>
-            <span><strong class="text-zinc-200">The Commons:</strong> We prioritize the creation of physical spaces—parks, halls, and living rooms—that exist outside the reach of the market.</span>
-          </li>
-        </ul>
-      </section>
+        <section class="space-y-4">
+          <h2 class="text-xs font-mono font-bold text-amber-600 uppercase tracking-widest">02. Reclaiming Public Space</h2>
+          <h3 class="text-3xl font-bold text-olive-950 tracking-tight">Changing Ownership</h3>
+          <p class="text-olive-800 leading-relaxed text-lg">
+            Our digital spaces are designed to monetize our lives because they are private spaces, owned by private interests. The only way to change the design of our communities is to <span class="text-amber-700 font-bold">change their ownership.</span>
+          </p>
+        </section>
 
-      <section class="space-y-6">
-        <h2 class="text-2xl font-semibold text-white">04. Technology as a Tool for Exit</h2>
-        <p class="text-zinc-400 leading-relaxed">
-          Most apps are designed to keep you inside them. <strong>The Agora App</strong> is designed to push you out. By functioning as a utilitarian bulletin board, it strips away the dopamine loops of modern social media, leaving only the logistics of rebellion.
-        </p>
-        <p class="text-zinc-400 leading-relaxed font-medium text-zinc-200">
-          We use digital tools to build a world that eventually won’t need them.
-        </p>
-      </section>
+        <section class="space-y-10 p-10 md:p-14 bg-olive-900 rounded-[3rem] text-olive-50 shadow-2xl relative overflow-hidden">
+          <div class="absolute top-0 right-0 w-32 h-32 bg-amber-500/10 blur-[80px]"></div>
+          
+          <div class="space-y-2">
+            <h2 class="text-xs font-mono font-bold text-amber-400 uppercase tracking-widest">03. Structure</h2>
+            <h3 class="text-4xl font-bold tracking-tight">Distributed, Not Centralized</h3>
+          </div>
+          
+          <p class="text-olive-200 leading-relaxed text-lg">
+            Traditional movements often fail because they are top-heavy. Agora operates on a distributed organizing model to ensure local resilience.
+          </p>
+          
+          <ul class="space-y-8">
+            <li class="flex gap-6 group">
+              <span class="flex-none w-10 h-10 rounded-xl bg-amber-500 flex items-center justify-center text-olive-950 font-bold font-mono transition-transform group-hover:scale-110">A</span>
+              <div>
+                <strong class="text-white text-lg block mb-1">The Local Chapter</strong>
+                <p class="text-olive-300">Autonomous nodes making decisions based on the needs of physical neighborhoods.</p>
+              </div>
+            </li>
+            <li class="flex gap-6 group">
+              <span class="flex-none w-10 h-10 rounded-xl bg-amber-500 flex items-center justify-center text-olive-950 font-bold font-mono transition-transform group-hover:scale-110">B</span>
+              <div>
+                <strong class="text-white text-lg block mb-1">The Social Network</strong>
+                <p class="text-olive-300">Utilitarian connective tissue for sharing resources without the noise of the public internet.</p>
+              </div>
+            </li>
+            <li class="flex gap-6 group">
+              <span class="flex-none w-10 h-10 rounded-xl bg-amber-500 flex items-center justify-center text-olive-950 font-bold font-mono transition-transform group-hover:scale-110">C</span>
+              <div>
+                <strong class="text-white text-lg block mb-1">The Commons</strong>
+                <p class="text-olive-300">Prioritizing physical spaces—parks, halls, and workshops—outside the reach of the market.</p>
+              </div>
+            </li>
+          </ul>
+        </section>
 
-            <section class="space-y-6">
-        <h2 class="text-2xl font-semibold text-white">05. Rebuilding Trust in Each Other</h2>
-        <p class="text-zinc-400 leading-relaxed">
-The crisis of community is also a crisis of <strong>trust</strong>. We need to rebuild trust in ourselves, in each other, and perhaps most importantly, in collective action. Capitalism offers a false sense of individual autonomy through the illusion of personal choice. In contract, participating in a collective project requires us to submit some of our autonomy for the sake of group discipline.        </p>
-        <p class="text-zinc-400 leading-relaxed font-medium text-zinc-200">
-For an alienated individual who's been raised to make a fetish of their individuality, this can be a frightening prospect. When we have so little experience of collective action, it’s easy to mistake group discipline for authoritarianism. We can't combat that fear through education, only through a slowly increasing level of experience with the value and the power of collective action.        </p>
-      </section>
+        <section class="space-y-4">
+          <h2 class="text-xs font-mono font-bold text-amber-600 uppercase tracking-widest">04. Technology as a Tool for Exit</h2>
+          <p class="text-olive-900 leading-relaxed text-2xl font-serif italic">
+            Most apps are designed to keep you inside them. <span class="text-amber-700">The Agora App</span> is designed to push you out.
+          </p>
+          <p class="text-olive-800 leading-relaxed">
+            By functioning as a utilitarian bulletin board, it strips away the dopamine loops of modern social media, leaving only the logistics of collective action. We use digital tools to build a world that eventually won’t need them.
+          </p>
+        </section>
 
-      <footer class="pt-12 border-t border-zinc-800">
-        <p class="text-sm text-zinc-500 mb-6">Are you ready to grow the movement for public life?</p>
-        <a href="/quorum" class="text-white underline underline-offset-4 hover:text-zinc-300">
-          Find out about Quorum
-        </a>
+        <section class="space-y-6">
+          <h2 class="text-xs font-mono font-bold text-amber-600 uppercase tracking-widest">05. Rebuilding Trust</h2>
+          <h3 class="text-3xl font-bold text-olive-950 tracking-tight">The Discipline of the Group</h3>
+          <p class="text-olive-800 leading-relaxed">
+            Participating in a collective project requires us to submit some of our autonomy for the sake of group discipline. For an alienated individual raised to make a fetish of their individuality, this can be frightening.
+          </p>
+          <p class="text-olive-950 font-bold text-xl border-l-4 border-olive-900 pl-8 my-10 py-2 leading-snug">
+            We cannot combat the fear of collective action through education, only through the lived experience of its power.
+          </p>
+        </section>
+      </div>
+
+      <footer class="pt-16 border-t border-olive-200">
+        <div class="bg-olive-900 p-10 rounded-[2.5rem] shadow-xl flex flex-col md:flex-row justify-between items-center gap-8">
+          <div class="text-center md:text-left space-y-1">
+            <p class="text-[10px] text-amber-400 uppercase font-mono tracking-[0.3em] font-bold">Deep Dive</p>
+            <h4 class="text-2xl font-bold text-white tracking-tight">Ready to meet the Quorum?</h4>
+          </div>
+          <a href="/quorum" class="bg-amber-600 text-white px-10 py-4 rounded-full font-bold hover:bg-amber-500 transition shadow-lg shadow-amber-600/20 active:scale-95 text-sm uppercase tracking-widest">
+            Internal Governance &rarr;
+          </a>
+        </div>
       </footer>
 
     </div>

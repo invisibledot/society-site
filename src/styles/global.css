@@ -1,5 +1,19 @@
 @import "tailwindcss";
 
+@import "tailwindcss";
+
+@theme {
+  /* Brand Colors */
+  --color-brand-surface: #f7f8f2;
+  --color-brand-heading: #1a2e05;
+  --color-brand-body: #3f4933;
+  --color-brand-accent: #d97706;
+  --color-brand-dark: #0e1a03;
+  
+  /* You can also define custom spacing or shadows here */
+  --shadow-massive: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -26,3 +40,4 @@ html {
 .animate-ping-slow {
   animation: ping-slow 3s cubic-bezier(0, 0, 0.2, 1) infinite;
 }
+

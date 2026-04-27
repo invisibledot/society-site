@@ -1,0 +1,12 @@
+---
+const { href, variant = "primary" } = Astro.props;
+
+const styles = {
+  primary: "bg-brand-dark text-white hover:bg-brand-accent shadow-lg shadow-brand-dark/20",
+  outline: "border-2 border-brand-dark text-brand-dark hover:bg-brand-dark hover:text-white",
+  fullWidth: "bg-brand-dark text-white hover:bg-brand-accent shadow-lg shadow-brand-dark/20"
+};
+---
+<a href={href} class={`px-10 py-4 rounded-full font-bold transition-all active:scale-95 text-sm uppercase tracking-widest ${styles[variant]}`}>
+  <slot />
+</a>

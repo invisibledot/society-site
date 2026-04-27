@@ -9,8 +9,8 @@ interface Props {
 }
 
 const { 
-  title = "The Society", 
-  description = "Default description for the society site." 
+  title = "Agora", 
+  description = "Reclaiming the Commons." 
 } = Astro.props;
 ---
 
@@ -32,12 +32,12 @@ const {
 
         <ClientRouter />
     </head>
-    <body class="bg-zinc-950 text-zinc-100 antialiased flex flex-col min-h-screen">
+    <body class="bg-olive-50 text-olive-900 antialiased flex flex-col min-h-screen">
         <Navbar />
         <main class="flex-grow">
             <slot />
         </main>
-        <footer class="px-6 py-12 text-center text-sm text-zinc-500">
+        <footer class="px-6 py-12 text-center text-sm text-olive-900">
             &copy; {new Date().getFullYear()} Agora
         </footer>
     </body>
