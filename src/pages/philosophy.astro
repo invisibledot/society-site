@@ -1,5 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import Header from "../components/ui/Header.astro";
+
 ---
 
 <Layout title="Philosophy | Agora" description="A distributed movement to reclaim the commons and combat digital atomization.">
@@ -7,17 +9,17 @@ import Layout from "../layouts/Layout.astro";
   <article class="pt-32 pb-24 px-6 bg-olive-50 text-olive-900 antialiased">
     <div class="max-w-3xl mx-auto space-y-16">
       
-      <header class="space-y-6">
-        <div class="inline-block px-3 py-1 rounded-full border border-amber-200 bg-amber-50 text-[10px] font-mono uppercase tracking-[0.2em] text-amber-700 font-bold">
+      <Header>
+        <span slot="surtitle">
           Manifesto 01
-        </div>
-        <h1 class="text-5xl md:text-7xl font-bold tracking-tight text-olive-950">
+        </span>
+        <fragment slot="header">
           Our Philosophy
-        </h1>
-        <p class="text-xl text-olive-800 font-serif italic leading-relaxed border-l-4 border-amber-500 pl-6">
+        </fragment>
+        <fragment slot="subtitle">
           “The first step in reclaiming the world is looking away from the screen.”
-        </p>
-      </header>
+        </fragment>
+      </Header>
 
       <section class="grid md:grid-cols-2 gap-8 py-12 border-y border-olive-200">
         <div class="p-8 bg-white rounded-3xl border border-olive-100 shadow-sm transition-transform hover:-translate-y-1">

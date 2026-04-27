@@ -1,5 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import Header from "../components/ui/Header.astro";
 ---
 
 <Layout title="Organization | Agora" description="Understanding the distributed structure and the sponsor system of our community.">
@@ -7,15 +8,17 @@ import Layout from "../layouts/Layout.astro";
   <section class="pt-32 pb-24 px-6 bg-olive-50 text-olive-900">
     <div class="max-w-5xl mx-auto space-y-24">
       
-      <div class="max-w-3xl">
-        <div class="inline-block px-3 py-1 rounded-full bg-amber-100 border border-amber-200 text-[10px] font-mono uppercase tracking-[0.2em] text-amber-700 font-bold mb-6">
+      <Header>
+        <span slot="surtitle">
           System Architecture
-        </div>
-        <h1 class="text-5xl md:text-6xl font-bold tracking-tight mb-6 text-olive-950">The Structure</h1>
-        <p class="text-xl text-olive-800 leading-relaxed font-serif italic">
+        </span>
+        <fragment slot="header">
+          The Structure
+        </fragment>
+        <fragment slot="subtitle">
           Agora’s structure combines the resilience of interpersonal bonds with the power of mass organization. We are a mesh, not a monolith.
-        </p>
-      </div>
+        </fragment>
+      </Header>
 
       <div class="grid md:grid-cols-2 gap-12 items-center">
         <div class="space-y-6">
