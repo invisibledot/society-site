@@ -2,48 +2,39 @@
 import Button from "../components/ui/Button.astro";
 ---
 
-<form id="contact-form" class="max-w-md mx-auto space-y-4 text-left">
+<form 
+  action="https://api.staticforms.dev/submit" 
+  method="POST" 
+  class="max-w-md mx-auto space-y-4 text-left"
+>
+  <!-- Replace with your actual Access Key from staticforms.xyz -->
+  <input type="hidden" name="accessKey" value="sf_813a7cba00694438a6fbb405" />
+  
+  <!-- Optional: Where to send the user after they submit -->
+  <input type="hidden" name="redirectTo" value="https://feature-app-updates--joinagora.netlify.app/thanks" />
+
+    <div>
+    <label for="name" class="block text-sm font-medium mb-1 text-brand-heading">Name</label>
+    <input type="name" name="name" id="name" required 
+      class="w-full bg-brand-surface border border-brand-dark/10 rounded-lg px-4 py-2 focus:ring-2 focus:ring-brand-accent/20 outline-none" />
+  </div>
+
   <div>
-    <label for="email" class="block text-sm font-medium mb-1">Email</label>
+    <label for="email" class="block text-sm font-medium mb-1 text-brand-heading">Email</label>
     <input type="email" name="email" id="email" required 
-      class="w-full bg-olive-200 border border-white/10 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-white/20" />
+      class="w-full bg-brand-surface border border-brand-dark/10 rounded-lg px-4 py-2 focus:ring-2 focus:ring-brand-accent/20 outline-none" />
   </div>
+
   <div>
-    <label for="message" class="block text-sm font-medium mb-1">Message</label>
+    <label for="message" class="block text-sm font-medium mb-1 text-brand-heading">Message</label>
     <textarea name="message" id="message" required rows="4"
-      class="w-full bg-olive-200 border border-white/10 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-white/20"></textarea>
+      class="w-full bg-brand-surface border border-brand-dark/10 rounded-lg px-4 py-2 focus:ring-2 focus:ring-brand-accent/20 outline-none"></textarea>
   </div>
-  <div class="justify-center">
-  <Button type="submit" variant="fullWidth">
-    Send Message
-  </button>
+
+  <div class="pt-4">
+    <!-- Note: We are passing type="submit" here -->
+    <Button type="submit" variant="primary">
+      Send Message
+    </Button>
   </div>
-  <p id="response-msg" class="text-sm text-center mt-4 hidden"></p>
 </form>
-
-<script>
-  import { actions } from 'astro:actions';
-
-  const form = document.getElementById('contact-form') as HTMLFormElement;
-  const msg = document.getElementById('response-msg');
-
-  form?.addEventListener('submit', async (e) => {
-    e.preventDefault();
-    const formData = new FormData(form);
-    
-    // Call the action
-    const { data, error } = await actions.contact(formData);
-
-    if (msg) {
-      msg.classList.remove('hidden');
-      if (error) {
-        msg.textContent = "Something went wrong. Please try again.";
-        msg.className = "text-red-400 text-sm text-center mt-4";
-      } else {
-        msg.textContent = data.message;
-        msg.className = "text-green-400 text-sm text-center mt-4";
-        form.reset();
-      }
-    }
-  });
-</script>
