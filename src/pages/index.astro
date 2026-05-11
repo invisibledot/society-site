@@ -13,12 +13,15 @@ import ContactForm from "../components/ContactForm.astro";
       <img src="/logo/SVG/agora-logo.svg" alt="Agora Logo" class="w-72 md:w-96 mx-auto" />
       
       <p class="text-2xl md:text-4xl text-brand-body font-serif italic">
-        Building the infrastructure for a life lived <span class="text-brand-accent underline">offline.</span>
+        Unplug. <span class="text-brand-accent">Reconnect.</span><br/>
+      </p>
+      <p class="text-xl md:text-2xl text-brand-body font-serif italic">
+        The Agora Project helps you to spend less time online and more time building real community.
       </p>
 
       <div class="flex justify-center gap-4">
-        <Button href="/organization">Join a Chapter</Button>
-        <Button href="/philosophy" variant="outline">The Manifesto</Button>
+        <Button href="#cta">Join a Chapter</Button>
+        <Button href="/manifesto" variant="outline">The Manifesto</Button>
       </div>
     </div>
   </section>
@@ -26,37 +29,37 @@ import ContactForm from "../components/ContactForm.astro";
   <section class="py-24 px-6 bg-white">
     <div class="max-w-6xl mx-auto">
       <div class="mb-10 text-center md:text-left space-y-4">
-        <h2 class="text-4xl font-bold text-olive-950 tracking-tight">Reclaim our community, <span class="text-amber-600">together.</span></h2>
+        <h2 class="text-4xl font-bold text-olive-950 tracking-tight">Reclaiming our communities, <span class="text-amber-600">together.</span></h2>
         <p class="text-olive-700 max-w-2xl text-lg leading-relaxed">
-          Agora is not a service you subscribe to; it is a movement you sustain. We don't provide "content"—we provide the framework for mutual support and collective action.
+          The Agora Project isn’t a service you subscribe to: it’s a movement sustained by its members. When you join the Project, you’ll participate in the development of new networks of social life, mutual aid, and political organizing.
         </p>
       </div>
 
       <CardContainer variant="ThreeCols">
-            <FeatureCard title="Collective Stewardship">
+            <FeatureCard title="A Richer Social Life">
               <svg slot="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
-              Members work together to secure physical spaces.
-            </FeatureCard>
-
-            <FeatureCard title="Organic Co-Creation">
-              <svg slot="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
-            Events aren't "curated" for you. Local chapters pool skills and labor, turning every gathering into a collaborative act of community building.
+              Members work together to organize social events and work on shared projects, as well as political <strong>study circles</strong> to share ideas and develop our movement.
             </FeatureCard>
 
             <FeatureCard title="Mutual Solidarity">
               <svg slot="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.42 4.58a5.4 5.4 0 0 0-7.65 0l-.77.78-.77-.78a5.4 5.4 0 0 0-7.65 0C1.46 6.7 1.33 10.28 4 13l8 8 8-8c2.67-2.72 2.54-6.3.42-8.42z"></path></svg>
-            Your Sponsor and Chapter are your safety net. We replace transactional services with real-world human accountability and aid.
+            Your sponsor is your support and guide to the resources of the chapter. Local groups pool skills and labour, turning every chapter into a reflection of its members.
+            </FeatureCard>
+
+            <FeatureCard title="Political Campaigning">
+              <svg slot="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>          
+            Local solutions can only go so far. The Agora Project campaigns to oppose the privatization of common space and to promote digital sovereignty.
             </FeatureCard>
       </CardContainer>
 
-  <section class="py-32 px-6 text-center bg-olive-900 text-olive-50">
+  <section id="cta" class="py-32 px-6 text-center bg-olive-900 text-olive-50">
     <div class="max-w-2xl mx-auto space-y-8">
       <div class="inline-block px-4 py-1 rounded-full bg-amber-600 text-white text-xs font-bold uppercase tracking-widest">
         Get Started
       </div>
-      <h2 class="text-4xl md:text-5xl font-bold tracking-tight">The Agora is waiting.</h2>
+      <h2 class="text-4xl md:text-5xl font-bold tracking-tight">Join the Agora.</h2>
       <p class="text-olive-200 text-lg">
-        Stop scrolling. Start building. Join a local chapter today and help us reclaim the commons.
+        Stop scrolling. Start building. Join a local chapter today and help us reclaim the Commons.
       </p>
       <div class="pt-8 bg-white p-8 md:p-12 rounded-[3rem] text-left shadow-2xl text-olive-900">
         <ContactForm />
