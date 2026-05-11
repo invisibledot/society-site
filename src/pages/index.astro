@@ -1,73 +1,69 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import Button from "../components/ui/Button.astro";
+import FeatureCard from "../components/ui/FeatureCard.astro";
+import CardContainer from "../components/ui/CardContainer.astro";
 import ContactForm from "../components/ContactForm.astro";
 ---
 
-<Layout 
-  title="The Society - Free Your Mind" 
-  description="A modern, high-performance landing page built with Astro 6."
->
-  <section
-    id="hero"
-    class="relative min-h-screen flex items-center justify-center px-6 text-zinc-100 antialiased
-           bg-[url('/hero-bg.jpg')] bg-cover bg-center"
-  >
-    <div class="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/80"></div>
-
-    <div class="relative max-w-3xl text-center space-y-6 fade-up">
-      <h1 class="text-5xl md:text-6xl font-bold tracking-tight">
-        The antidote to the algorithm.
-      </h1>
-      <p class="text-lg md:text-xl text-zinc-200">
-        A private society for those choosing depth over distraction. Reclaim your attention through in-person community and analog experiences.
+<Layout title="Agora | Reclaiming the Commons">
+  
+  <section class="relative pt-32 pb-20 px-6 bg-brand-surface text-center">
+    <div class="max-w-4xl mx-auto space-y-10 relative z-10">
+      <img src="/logo/SVG/agora-logo.svg" alt="Agora Logo" class="w-72 md:w-96 mx-auto" />
+      
+      <p class="text-2xl md:text-4xl text-brand-body font-serif italic">
+        Unplug. <span class="text-brand-accent">Reconnect.</span><br/>
       </p>
-      <a
-        href="#features"
-        class="inline-block rounded-lg bg-white text-black px-6 py-3 font-medium hover:bg-zinc-200 transition"
-      >
-        Join the Movement
-      </a>
-    </div>
-  </section>
+      <p class="text-xl md:text-2xl text-brand-body font-serif italic">
+        The Agora Project helps you to spend less time online and more time building real community.
+      </p>
 
-  <section id="about" class="px-6 py-24 bg-zinc-900 text-zinc-100 scroll-mt-16">
-    <div class="max-w-3xl mx-auto space-y-6">
-        <h2 class="text-3xl font-semibold">Life is happening elsewhere.</h2>
-        <p class="text-zinc-400">
-          We spend an average of seven hours a day behind glass. The Society exists to reclaim that time. We are a decentralized collective of thinkers, makers, and explorers who believe the most important things in life happen in high-definition, face-to-face. No feeds, no notifications—just presence.
-        </p>
-    </div>
-  </section>
-
-  <section id="features" class="px-6 py-24 bg-zinc-950 text-zinc-100 scroll-mt-16">
-    <div class="max-w-5xl mx-auto">
-      <h2 class="text-3xl font-semibold text-center mb-12">
-        What you get
-      </h2>
-
-      <div class="grid gap-8 md:grid-cols-3">
-        {[
-          { title: "Phone-Free Gatherings", desc: "Weekly dinners, hikes, and workshops where all digital devices are checked at the door." },
-          { title: "The Analog Library", desc: "Access to our physical archive of curated prints, vinyl, and literature—exclusive to members." },
-          { title: "Local Chapters", desc: "Find your “Cell.” Small, local groups dedicated to shared hobbies like woodworking, philosophy, or gardening." },
-        ].map(feature => (
-          <div class="rounded-xl bg-zinc-900 p-6 border border-white/5">
-            <h3 class="font-medium mb-2 text-white">{feature.title}</h3>
-            <p class="text-sm text-zinc-400">
-              {feature.desc}
-            </p>
-          </div>
-        ))}
+      <div class="flex justify-center gap-4">
+        <Button href="#cta">Join a Chapter</Button>
+        <Button href="/manifesto" variant="outline">The Manifesto</Button>
       </div>
     </div>
   </section>
 
-<section id="cta" class="px-6 py-32 bg-zinc-900 text-center text-zinc-100 scroll-mt-16">
-    <div class="max-w-2xl mx-auto space-y-6">
-      <h2 class="text-4xl font-semibold mb-8">Ready to disconnect?</h2>
-            <p class="text-lg md:text-xl text-zinc-200">
-        Membership is currently by invitation and application only. Tell us why you’re ready to trade your screen time for real time.
+  <section class="py-24 px-6 bg-white">
+    <div class="max-w-6xl mx-auto">
+      <div class="mb-10 text-center md:text-left space-y-4">
+        <h2 class="text-4xl font-bold text-olive-950 tracking-tight">Reclaiming our communities, <span class="text-amber-600">together.</span></h2>
+        <p class="text-olive-700 max-w-2xl text-lg leading-relaxed">
+          The Agora Project isn’t a service you subscribe to: it’s a movement sustained by its members. When you join the Project, you’ll participate in the development of new networks of social life, mutual aid, and political organizing.
+        </p>
+      </div>
+
+      <CardContainer variant="ThreeCols">
+            <FeatureCard title="A Richer Social Life">
+              <svg slot="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+              Members work together to organize social events and work on shared projects, as well as political <strong>study circles</strong> to share ideas and develop our movement.
+            </FeatureCard>
+
+            <FeatureCard title="Mutual Solidarity">
+              <svg slot="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.42 4.58a5.4 5.4 0 0 0-7.65 0l-.77.78-.77-.78a5.4 5.4 0 0 0-7.65 0C1.46 6.7 1.33 10.28 4 13l8 8 8-8c2.67-2.72 2.54-6.3.42-8.42z"></path></svg>
+            Your sponsor is your support and guide to the resources of the chapter. Local groups pool skills and labour, turning every chapter into a reflection of its members.
+            </FeatureCard>
+
+            <FeatureCard title="Political Campaigning">
+              <svg slot="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>          
+            Local solutions can only go so far. The Agora Project campaigns to oppose the privatization of common space and to promote digital sovereignty.
+            </FeatureCard>
+      </CardContainer>
+
+  <section id="cta" class="py-32 px-6 text-center bg-olive-900 text-olive-50">
+    <div class="max-w-2xl mx-auto space-y-8">
+      <div class="inline-block px-4 py-1 rounded-full bg-amber-600 text-white text-xs font-bold uppercase tracking-widest">
+        Get Started
+      </div>
+      <h2 class="text-4xl md:text-5xl font-bold tracking-tight">Join the Agora.</h2>
+      <p class="text-olive-200 text-lg">
+        Stop scrolling. Start building. Join a local chapter today and help us reclaim the Commons.
       </p>
-      <ContactForm /> </div>
-</section>
+      <div class="pt-8 bg-white p-8 md:p-12 rounded-[3rem] text-left shadow-2xl text-olive-900">
+        <ContactForm />
+      </div>
+    </div>
+  </section>
 </Layout>

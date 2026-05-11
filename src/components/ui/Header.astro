@@ -1,0 +1,17 @@
+---
+import Capsule from "./Capsule.astro";
+---
+
+<header class="space-y-6">
+  <Capsule>
+    <slot name="surtitle" slot="surtitle" />
+  </Capsule>
+
+  <h1 class="text-5xl md:text-7xl font-bold tracking-tight text-brand-heading">
+    <slot name="header" />
+  </h1>
+
+  <p class="text-xl text-brand-body font-serif italic leading-relaxed border-l-4 border-brand-accent pl-6">
+    <slot name="subtitle" />
+  </p>
+</header>

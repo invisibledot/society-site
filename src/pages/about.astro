@@ -1,0 +1,64 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/ui/Header.astro";
+import FeatureCard from "../components/ui/FeatureCard.astro";
+---
+
+<Layout title="About | Agora" description="Understanding the distributed structure and the sponsor system of our community.">
+  
+  <article class="pt-32 pb-24 px-6 bg-olive-50 text-olive-900 antialiased">
+    <div class="max-w-3xl mx-auto space-y-16">
+      
+      <Header>
+        <span slot="surtitle">
+          Apologia
+        </span>
+        <fragment slot="header">
+          What is Agora?
+        </fragment>
+        <fragment slot="subtitle">
+          A speculative design project inspired by the history of Swedish social democracy.
+        </fragment>
+      </Header>
+
+        <div class="space-y-12">
+        
+        <section class="space-y-4">
+          <h2 class="text-3xl font-bold text-olive-950 tracking-tight">An Imagined Community</h2>
+          <p class="text-olive-800 leading-relaxed text-lg">
+The Agora Project is not a real organization. It’s a speculative exploration of the nature of social organization and the relationship between, individuals, community, membership, identity, and society. When you encounter Agora, you are invited to participate in the act of crafting a shared identity, community, and common purpose. How do communities come about? How do group identities develop and by what process do individuals embrace them? In this work, I don’t pretend to have answered those questions, but only to have begun to explore them.          </p>
+        </section>
+
+        <section class="space-y-4">
+          <h2 class="text-3xl font-bold text-olive-950 tracking-tight">What Makes Society Change?</h2>
+          <p class="text-olive-800 leading-relaxed text-lg">
+A basic assumption of this project is that social change is driven not by ideas but by social forces in conflict. But people are not swept passively by the flow of history like leaves on the air: we react actively and creatively to our conditions, and if we work together, we may find that we have the strength to harness those historical forces.          </p>
+        </section>
+
+        <section class="space-y-4">
+          <h2 class="text-3xl font-bold text-olive-950 tracking-tight">From Liquor to Labour</h2>
+          <p class="text-olive-800 leading-relaxed text-lg">
+The networks and organizing skills that gave rise to the Swedish labour movement derived not only from political theories or conditions at work, but from the religious movement against alcoholism. The temperance movement was once the fastest growing and most popular movement in Sweden.
+        </section>
+
+        <section class="space-y-10 p-10 md:p-14 bg-olive-900 rounded-[3rem] text-olive-50 shadow-2xl relative overflow-hidden">
+          <div class="absolute top-0 right-0 w-32 h-32 bg-amber-500/10 blur-[80px]"></div>
+          
+          <div class="space-y-2">
+            <h2 class="text-4xl font-bold tracking-tight">The Study Circle</h2>
+          </div>
+          
+          <p class="text-olive-200 leading-relaxed text-lg border-l-4 border-brand-accent pl-6">
+“Popular education was a process of learning and teaching; it was free and voluntary, and its prime teaching method was the study circle. The study circle, possibly the most important legacy of the temperance movement, constituted small reading groups... Research into the impact of study circle activities on participants in recent times suggests that the participants perceive the circles as helping deepen their interest in the subject of study, and as building fellowship among participants, bolstering self-esteem, and improving social skills. The circles also helped to develop and embrace “citizens’ values,” which include forming and expressing personal opinions and arguing for them in the group, taking responsibility, and making decisions collectively.”<br/>
+          </p>
+          <p>
+            — <i>Crafting the Movement: Identity Entrepreneurs in the Swedish Trade Union Movement, 1920-1940</i> by Jenny Jansson
+          </p>
+          
+        </section>
+
+        </div>
+
+    </div>
+</article>
+</Layout>

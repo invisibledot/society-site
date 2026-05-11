@@ -1,0 +1,12 @@
+---
+const { title } = Astro.props;
+---
+<div class="p-10 rounded-[2.5rem] bg-brand-surface border border-olive-100 space-y-6 transition-transform hover:-translate-y-1">
+  <div class="w-12 h-12 bg-amber-100 rounded-2xl flex items-center justify-center text-brand-accent">
+    <slot name="icon" />
+  </div>
+  <h3 class="text-2xl font-bold text-brand-heading">{title}</h3>
+  <p class="text-brand-body leading-relaxed">
+    <slot />
+  </p>
+</div>
